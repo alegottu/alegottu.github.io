@@ -30,7 +30,7 @@ def run():
     for post, config in posts.items():
         listitems += f"<li><a href='posts/{config['file'][0]}.html'>{config['title'][0]}: {config['date'][0]}</a></li>\n"
 
-    with open(f"devlog.html", 'w') as output:
+    with open(f"projects.html", 'w') as output:
         output.write(
             template.render(
                 items=listitems
